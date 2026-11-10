@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raiana Beauty | Doğal Kozmetik &amp; Cilt Bakımı</title>
+  <meta name="description" content="Raiana Beauty: bitkisel içerikli, dermatolojik olarak test edilmiş cilt bakımı, makyaj ve saç bakım ürünleri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap&subset=latin,latin-ext,cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="announce" data-i18n-html="announce">Her 750 ₺ ve üzeri siparişte ücretsiz kargo &nbsp;•&nbsp; İlk siparişe %10 indirim: <strong>HOSGELDIN10</strong></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <button class="icon-btn menu-toggle" id="menuToggle" data-i18n-aria="menu" aria-label="Menüyü aç">☰</button>
+      <a href="#" class="logo">Raiana<span>Beauty</span></a>
+      <nav class="nav" id="nav">
+        <a href="#koleksiyonlar" data-i18n="nav_collections">Koleksiyonlar</a>
+        <a href="#urunler" data-i18n="nav_products">Ürünler</a>
+        <a href="#icerikler" data-i18n="nav_ingredients">İçerikler</a>
+        <a href="#hakkimizda" data-i18n="nav_about">Hakkımızda</a>
+        <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang" id="lang" role="group" aria-label="Language">
+          <button data-lang="tr" class="is-active">TR</button>
+          <button data-lang="en">EN</button>
+          <button data-lang="ru">RU</button>
+        </div>
+        <button class="icon-btn" id="cartOpen" data-i18n-aria="cart_open" aria-label="Sepeti aç">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="eyebrow" data-i18n="hero_eyebrow">Yeni Koleksiyon 2026</span>
+          <h1 data-i18n-html="hero_title">Cildinizin doğal ışıltısını <em>ortaya çıkarın</em></h1>
+          <p data-i18n="hero_text">Bitkisel özlerle formüle edilmiş, vegan ve cruelty-free bakım ürünleriyle her gün kendinize zaman ayırın.</p>
+          <div class="hero__cta">
+            <a href="#urunler" class="btn btn--primary" data-i18n="hero_cta1">Alışverişe Başla</a>
+            <a href="#koleksiyonlar" class="btn btn--ghost" data-i18n="hero_cta2">Koleksiyonları Keşfet</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>98%</strong><span data-i18n="stat1">Doğal içerik</span></li>
+            <li><strong>50.000+</strong><span data-i18n="stat2">Mutlu müşteri</span></li>
+            <li><strong>4.8/5</strong><span data-i18n="stat3">Ortalama puan</span></li>
+          </ul>
+        </div>
+        <div class="hero__art">
+          <div class="blob"></div>
+          <figure class="cover">
+            <img src="img/cover.jpg" alt="Raiana Beauty" width="768" height="1024" fetchpriority="high">
+            <figcaption class="cover__badge">
+              <strong>Clean Glow</strong>
+              <span data-i18n="cover_badge">Günlük bakım rutini</span>
+            </figcaption>
+          </figure>
+          <div class="float-card float-card--1"><span>🌿</span><b data-i18n="fc1">Vegan</b></div>
+          <div class="float-card float-card--2"><span>✨</span><b data-i18n="fc2">Dermatolojik test</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust">
+      <div class="container trust__grid">
+        <div><strong data-i18n="trust1_t">🌿 Vegan Formül</strong><span data-i18n="trust1_d">Hayvansal içerik yok</span></div>
+        <div><strong data-i18n="trust2_t">🐇 Cruelty-Free</strong><span data-i18n="trust2_d">Hayvanlar üzerinde test yok</span></div>
+        <div><strong data-i18n="trust3_t">🧪 Dermatolojik Test</strong><span data-i18n="trust3_d">Hassas ciltlere uygun</span></div>
+        <div><strong data-i18n="trust4_t">🚚 Hızlı Teslimat</strong><span data-i18n="trust4_d">1-3 iş gününde kapınızda</span></div>
+      </div>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section class="section" id="koleksiyonlar">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow" data-i18n="col_eyebrow">Koleksiyonlar</span>
+          <h2 data-i18n="col_title">İhtiyacınıza göre seçin</h2>
+        </div>
+        <div class="collections">
+          <a href="#urunler" class="collection" data-filter="cilt" style="--c1:#f4e3d7;--c2:#e9c6b0">
+            <h3 data-i18n="col1_t">Cilt Bakımı</h3><p data-i18n="col1_d">Serum, krem, temizleyici</p><span data-i18n="discover">Keşfet →</span>
+          </a>
+          <a href="#urunler" class="collection" data-filter="makyaj" style="--c1:#f6dce0;--c2:#e8a9b5">
+            <h3 data-i18n="col2_t">Makyaj</h3><p data-i18n="col2_d">Ruj, fondöten, allık</p><span data-i18n="discover">Keşfet →</span>
+          </a>
+          <a href="#urunler" class="collection" data-filter="sac" style="--c1:#e2ead9;--c2:#b9cfa6">
+            <h3 data-i18n="col3_t">Saç Bakımı</h3><p data-i18n="col3_d">Şampuan, maske, yağ</p><span data-i18n="discover">Keşfet →</span>
+          </a>
+          <a href="#urunler" class="collection" data-filter="vucut" style="--c1:#e3e3f0;--c2:#bcbde0">
+            <h3 data-i18n="col4_t">Vücut &amp; Parfüm</h3><p data-i18n="col4_d">Losyon, yağ, kokular</p><span data-i18n="discover">Keşfet →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section section--alt" id="urunler">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow" data-i18n="prod_eyebrow">Ürünler</span>
+          <h2 data-i18n="prod_title">Çok satanlar</h2>
+        </div>
+        <div class="toolbar">
+          <div class="filters" id="filters">
+            <button class="chip is-active" data-filter="all" data-i18n="f_all">Tümü</button>
+            <button class="chip" data-filter="cilt" data-i18n="f_skin">Cilt Bakımı</button>
+            <button class="chip" data-filter="makyaj" data-i18n="f_makeup">Makyaj</button>
+            <button class="chip" data-filter="sac" data-i18n="f_hair">Saç</button>
+            <button class="chip" data-filter="vucut" data-i18n="f_body">Vücut &amp; Parfüm</button>
+          </div>
+          <div class="toolbar__right">
+            <input type="search" id="search" data-i18n-placeholder="search" data-i18n-aria="search" placeholder="Ürün ara…" aria-label="Ürün ara">
+            <select id="sort" data-i18n-aria="sort" aria-label="Sırala">
+              <option value="featured" data-i18n="s_featured">Öne çıkanlar</option>
+              <option value="price-asc" data-i18n="s_asc">Fiyat: Artan</option>
+              <option value="price-desc" data-i18n="s_desc">Fiyat: Azalan</option>
+              <option value="rating" data-i18n="s_rating">En yüksek puan</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid" id="productGrid"></div>
+        <p class="empty" id="empty" hidden data-i18n="empty">Aramanızla eşleşen ürün bulunamadı.</p>
+      </div>
+    </section>
+
+    <!-- INGREDIENTS -->
+    <section class="section" id="icerikler">
+      <div class="container split">
+        <div class="split__art">
+          <div class="ring ring--1"></div><div class="ring ring--2"></div><div class="ring ring--3"></div>
+          <div class="split__badge" data-i18n-html="ing_badge">Saf<br>İçerik</div>
+        </div>
+        <div class="split__text">
+          <span class="eyebrow" data-i18n="ing_eyebrow">İçeriklerimiz</span>
+          <h2 data-i18n="ing_title">Az ama etkili: şeffaf formüller</h2>
+          <p data-i18n="ing_text">Her ürünümüzde yalnızca işe yarayan, kaynağı bilinen bileşenleri kullanıyoruz. Paraben, sülfat ve mineral yağ içermeyen formüllerimizi cildinizle uyumlu olacak şekilde geliştiriyoruz.</p>
+          <ul class="ingredients">
+            <li><b data-i18n="ing1_t">Hyaluronik Asit</b> <span data-i18n="ing1_d">Derin nem desteği ve dolgun görünüm</span></li>
+            <li><b data-i18n="ing2_t">Niasinamid</b> <span data-i18n="ing2_d">Gözenek görünümünü dengeler, ton eşitler</span></li>
+            <li><b data-i18n="ing3_t">Gül Yağı</b> <span data-i18n="ing3_d">Yatıştırıcı, antioksidan ve doğal kokulu</span></li>
+            <li><b data-i18n="ing4_t">Argan Yağı</b> <span data-i18n="ing4_d">Saç ve cilde besleyici parlaklık</span></li>
+          </ul>
+          <a href="#urunler" class="btn btn--primary" data-i18n="ing_cta">Ürünleri Gör</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--dark" id="hakkimizda">
+      <div class="container about">
+        <div>
+          <span class="eyebrow eyebrow--light" data-i18n="about_eyebrow">Hakkımızda</span>
+          <h2 data-i18n="about_title">Güzellik, sürdürülebilir olduğunda daha anlamlıdır</h2>
+        </div>
+        <div class="about__cols">
+          <p data-i18n="about_p1">2016'dan beri Raiana Beauty olarak, doğadan ilham alan ve bilimle desteklenen bakım ürünleri geliştiriyoruz. Ambalajlarımızın %90'ı geri dönüştürülebilir malzemelerden oluşuyor.</p>
+          <p data-i18n="about_p2">Her satıştan elde edilen gelirin bir bölümü, yerel üreticileri ve kadın kooperatiflerini destekleyen projelere aktarılıyor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow" data-i18n="rev_eyebrow">Yorumlar</span>
+          <h2 data-i18n="rev_title">Müşterilerimiz ne diyor?</h2>
+        </div>
+        <div class="reviews">
+          <article class="review"><div class="stars">★★★★★</div><p data-i18n="rev1">“Serum birkaç haftada cildimin tonunu belirgin şekilde eşitledi. Hassas cildimde hiç tahriş yapmadı.”</p><footer>— Elif K.</footer></article>
+          <article class="review"><div class="stars">★★★★★</div><p data-i18n="rev2">“Ruj hem çok rahat hem de gün boyu kalıyor. Renk seçenekleri harika.”</p><footer>— Zeynep A.</footer></article>
+          <article class="review"><div class="stars">★★★★☆</div><p data-i18n="rev3">“Saç maskesi sonrası saçlarım çok daha yumuşak ve parlak. Kokusu da çok hoş.”</p><footer>— Merve T.</footer></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / CONTACT -->
+    <section class="newsletter" id="iletisim">
+      <div class="container newsletter__inner">
+        <div>
+          <h2 data-i18n="nl_title">%10 hoş geldin indirimi</h2>
+          <p data-i18n="nl_text">Bültenimize abone olun; yeni ürünlerden ve özel kampanyalardan ilk siz haberdar olun.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter__form" novalidate>
+          <input type="email" id="newsletterEmail" data-i18n-placeholder="nl_ph" data-i18n-aria="nl_ph" placeholder="E-posta adresiniz" required aria-label="E-posta">
+          <button class="btn btn--light" type="submit" data-i18n="nl_btn">Abone Ol</button>
+          <small id="newsletterMsg" role="status"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo logo--light">Raiana<span>Beauty</span></a>
+        <p data-i18n="foot_tag">Doğal, vegan ve cruelty-free kozmetik.</p>
+      </div>
+      <div><h4 data-i18n="foot_shop">Mağaza</h4><a href="#urunler" data-i18n="foot_all">Tüm Ürünler</a><a href="#koleksiyonlar" data-i18n="nav_collections">Koleksiyonlar</a><a href="#icerikler" data-i18n="nav_ingredients">İçerikler</a></div>
+      <div><h4 data-i18n="foot_support">Destek</h4><a href="#" data-i18n="foot_track">Sipariş Takibi</a><a href="#" data-i18n="foot_return">İade &amp; Değişim</a><a href="#" data-i18n="foot_faq">Sıkça Sorulan Sorular</a></div>
+      <div><h4 data-i18n="nav_contact">İletişim</h4><a href="mailto:hello@raianabeauty.com">hello@raianabeauty.com</a><a href="tel:+908501234567">0850 123 45 67</a><span data-i18n="foot_city">İstanbul, Türkiye</span></div>
+    </div>
+    <div class="container footer__bottom">© <span id="year"></span> Raiana Beauty. <span data-i18n="foot_rights">Tüm hakları saklıdır.</span></div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Sepet" data-i18n-aria="cart" aria-hidden="true">
+    <div class="drawer__head"><h3 data-i18n="cart">Sepetiniz</h3><button class="icon-btn" id="cartClose" data-i18n-aria="close" aria-label="Kapat">✕</button></div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <div class="shipping" id="shippingNote"></div>
+      <div class="row"><span data-i18n="subtotal">Ara toplam</span><strong id="subtotal">0 ₺</strong></div>
+      <button class="btn btn--primary btn--block" id="checkout" data-i18n="checkout">Ödemeye Geç</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
